@@ -43,9 +43,9 @@ body {
     align-items: center;
     flex-direction: row;
     flex-flow: row;
+    overflow: hidden;
 }
 #top-section-section1-subsection1 {
-    background-color: grey;
     height: 100%;
     aspect-ratio: 1;
     display: flex;
@@ -53,17 +53,73 @@ body {
     align-items: center;
 }
 #top-section-menu-button {
+    background-color: rgba(200, 200, 200, 0);
     height: 75%;
     aspect-ratio: 1;
-    background-color: transparent;
     border: none;
     font-size: x-large;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 50%;
+    transition: 0.5s;
+    overflow: hidden;
 }
-#top-section-menu-button:hover {
-    cursor: pointer;
+#top-section-menu-button:active {
+    background-color: rgba(200, 200, 200, 0.5);
+}
+#top-section-section1-subsection2 {
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#top-section-logo-text {
+    background-image: url(water_texture.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: "Caprasimo", sans-serif;
+}
+#top-section-section1-subsection3 {
+    width: 28%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#top-section-search-button {
+    background-color: rgba(200, 200, 200, 0);
+    height: 75%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    transition: 0.75s;
+}
+#top-section-search-button:active {
+    background-color: rgba(200, 200, 200, 0.5);
+}
+.account-button {
+    height: 75%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: none;
+    background-image: url(unknown_user.png);
+    background-position: center;
+    background-size: 150%;
+    background-repeat: no-repeat;
+
 }
 #top-section-section2 {
     width: 100%;
