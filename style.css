@@ -56,71 +56,107 @@ body {
     background-color: rgba(200, 200, 200, 0);
     height: 75%;
     aspect-ratio: 1;
+    border-radius: 50%;
     border: none;
-    font-size: x-large;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
-    transition: 0.5s;
-    overflow: hidden;
+    font-size: 150%;
+    transition: 0.3s;
+}
+#top-section-menu-button:hover {
+    cursor: pointer;
 }
 #top-section-menu-button:active {
     background-color: rgba(200, 200, 200, 0.5);
 }
 #top-section-section1-subsection2 {
-    flex-grow: 1;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#top-section-logo-text {
-    background-image: url(water_texture.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: xx-large;
-    font-weight: bold;
-    font-family: "Caprasimo", sans-serif;
-}
-#top-section-section1-subsection3 {
-    width: 28%;
+    width: 10%;
+    min-width: 150px;
     height: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    flex-flow: row;
 }
-#top-section-search-button {
-    background-color: rgba(200, 200, 200, 0);
-    height: 75%;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    border: none;
+#top-section-logo-link {
+    width: 100%;
+    height: 100%;
+}
+#top-section-logo-image {
+    background-image: url(logo_long.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+#top-section-section1-subsection3 {
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (min-width: 600px) {
+    
+    #top-section-search-area {
+        background-color: white;
+        width: 80%;
+        height: 65%;
+        border-radius: 100vh;
+        border: 1px solid lightgrey;
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    #top-section-search-bar {
+        width: calc(95% - 5vmin);
+        height: 100%;
+        border: none;
+        border-right: 1px solid lightgrey;
+        outline: none;
+    }
+    #top-section-search-button {
+        background-color: transparent;
+        flex-grow: 1;
+        height: 100%;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 125%;
+        overflow: hidden;
+    }
+}
+@media screen and (max-width: 599px) {
+    #top-section-search-bar {
+        width: 0px;
+        height: 0px;
+        border: none;
+        outline: none;
+        overflow: hidden;
+    }
+    #top-section-search-button {
+        width: 0px;
+        height: 0px;
+        border: none;
+        overflow: hidden;
+    }
+}
+#top-section-section1-subsection4 {
+    background-color: blue;
+    width: 25%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: large;
-    transition: 0.75s;
 }
-#top-section-search-button:active {
-    background-color: rgba(200, 200, 200, 0.5);
-}
-.account-button {
-    height: 75%;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    border: none;
-    background-image: url(unknown_user.png);
-    background-position: center;
-    background-size: 150%;
-    background-repeat: no-repeat;
 
-}
 #top-section-section2 {
     width: 100%;
     flex-grow: 1;
