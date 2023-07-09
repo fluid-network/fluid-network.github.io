@@ -1,4 +1,3 @@
-//1
 body {
     margin: 0;
 }
@@ -211,7 +210,7 @@ body {
         background-color: rgba(200, 200, 200, 0.5);
     }
 }
-@media screen and (max-width: 399px) {
+@media screen and (max-width: 419px) {
     #top-section-microphone-search-2 {
         display: none;
         overflow: hidden;
@@ -224,7 +223,7 @@ body {
         align-items: center;
     }
 }
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 420px) {
     #top-section-section1-subsection4 {
         width: 25%;
         min-width: 200px;
