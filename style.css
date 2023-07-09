@@ -91,15 +91,6 @@ body {
     width: 100%;
     height: 100%;
 }
-#top-section-section1-subsection3 {
-    flex-grow: 1;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-flow: row;
-    justify-content: center;
-    align-items: center;
-}
 @media screen and (min-width: 600px) {
     
     #top-section-search-area {
@@ -110,20 +101,49 @@ body {
         border: 1px solid lightgrey;
         display: flex;
         flex-flow: row;
-        justify-content: center;
         align-items: center;
         overflow: hidden;
+        position: relative;
+    }
+    #top-section-search-bar-shell {
+        background-color: red;
+        flex-grow: 1;
+        height: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-flow: row;
+        align-items: center;
     }
     #top-section-search-bar {
-        width: calc(95% - 5vmin);
+        flex-grow: 1;
         height: 100%;
         border: none;
         border-right: 1px solid lightgrey;
         outline: none;
     }
+    #top-section-microphone-search {
+        background-color: rgba(200, 200, 200, 0);
+        height: 90%;
+        aspect-ratio: 1;
+        border: none;
+        border-radius: 50%;
+        font-size: 125%;
+        position: absolute;
+        right: 15px;
+        transition: 0.3s;
+    }
+    #top-section-microphone-search:hover {
+        cursor: pointer;
+    }
+    #top-section-microphone-search:active {
+        background-color: rgba(200, 200, 200, 0.5);
+    }
     #top-section-search-button {
-        background-color: transparent;
-        flex-grow: 1;
+        background-color: rgba(200, 200, 200, 0);
+        width: 10%;
+        min-width: 50px;
+        max-width: 125px;
         height: 100%;
         border: none;
         display: flex;
@@ -131,31 +151,107 @@ body {
         align-items: center;
         font-size: 125%;
         overflow: hidden;
+        transition: 0.3s;
+    }
+    #top-section-search-button:hover {
+        cursor: pointer;
+    }
+    #top-section-search-button:active {
+        background-color: rgba(200, 200, 200, 0.5);
+    }
+    #top-section-search-button-2 {
+        display: none;
+    }
+    #top-section-microphone-search-2 {
+        display: none;
     }
 }
 @media screen and (max-width: 599px) {
     #top-section-search-bar {
-        width: 0px;
-        height: 0px;
-        border: none;
-        outline: none;
-        overflow: hidden;
+        display: none;
     }
     #top-section-search-button {
-        width: 0px;
-        height: 0px;
+        display: none;
+    }
+    #top-section-microphone-search {
+        display: none;
+    }
+    #top-section-search-button-2 {
+        background-color: rgba(200, 200, 200, 0);
+        height: 90%;
+        aspect-ratio: 1;
+        border-radius: 50%;
         border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 125%;
+        transition: 0.3s;
+    }
+    #top-section-search-button-2:hover {
+        cursor: pointer;
+    }
+    #top-section-search-button-2:active {
+        background-color: rgba(200, 200, 200, 0.5);
+    }
+    #top-section-microphone-search-2 {
+        background-color: rgba(200, 200, 200, 0);
+        height: 90%;
+        aspect-ratio: 1;
+        border: none;
+        border-radius: 50%;
+        transition: 0.3s;
+        font-size: 125%;
         overflow: hidden;
     }
+    #top-section-microphone-search-2:hover {
+        cursor: pointer;
+    }
+    #top-section-microphone-search-2:active {
+        background-color: rgba(200, 200, 200, 0.5);
+    }
 }
-#top-section-section1-subsection4 {
-    background-color: blue;
-    width: 25%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media screen and (max-width: 399px) {
+    #top-section-microphone-search-2 {
+        display: none;
+        overflow: hidden;
+    }
+    #top-section-section1-subsection4 {
+        background-color: red;
+        flex-grow: 1;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
 }
+@media screen and (min-width: 400px) {
+    #top-section-section1-subsection4 {
+        width: 25%;
+        min-width: 200px;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #top-section-section1-subsection3 {
+        flex-grow: 1;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 300px) {
+    #top-section-section1-subsection2 {
+        display: none;
+    }
+}
+
+
+
 
 #top-section-section2 {
     width: 100%;
