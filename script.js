@@ -1,3 +1,4 @@
+{
 var div = document.getElementById('top-section-section2'), topsectionanimation = {animationId: undefined, dir: 1, status: 0};
 function startScrollAnimation() {
     topsectionanimation.animationId = requestAnimationFrame(scrollContent);
@@ -32,7 +33,7 @@ div.addEventListener('mousedown', function(event) {
     stopScrollAnimation();
     
 });
-div.addEventListener('mousemove', function(event) {
+document.addEventListener('mousemove', function(event) {
         if(div.matches(':active') === true) {
             div.scrollLeft -= event.movementX;
         }
@@ -50,7 +51,7 @@ div.addEventListener('touchend', function(event) {
         startScrollAnimation();
     }
 });
-
+}
 window.onload = function(event) {
     startScrollAnimation();
 };
