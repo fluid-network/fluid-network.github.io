@@ -106,7 +106,6 @@ body {
         position: relative;
     }
     #top-section-search-bar-shell {
-        background-color: red;
         flex-grow: 1;
         height: 100%;
         position: relative;
@@ -217,7 +216,6 @@ body {
         overflow: hidden;
     }
     #top-section-section1-subsection4 {
-        background-color: red;
         flex-grow: 1;
         height: 100%;
         display: flex;
