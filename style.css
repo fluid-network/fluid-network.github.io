@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    height: 10000px;
 }
 
 #top-section {
@@ -10,6 +11,9 @@ body {
     display: flex;
     flex-direction: column;
     flex-flow: column;
+    position: fixed;
+    top: 0;
+    transform: translateY(10px);
 }
 
 .item {
@@ -92,7 +96,15 @@ body {
     height: 100%;
 }
 @media screen and (min-width: 600px) {
-    
+    #top-section-section1-subsection3 {
+        min-width: 300px;
+        width: 25%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-flow: row;
+        align-items: center;
+    }
     #top-section-search-area {
         background-color: white;
         width: 80%;
@@ -141,13 +153,10 @@ body {
     #top-section-search-button {
         background-color: rgba(200, 200, 200, 0);
         width: 10%;
-        min-width: 50px;
+        min-width: 75px;
         max-width: 125px;
         height: 100%;
         border: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         font-size: 125%;
         overflow: hidden;
         transition: 0.3s;
@@ -209,6 +218,14 @@ body {
     #top-section-microphone-search-2:active {
         background-color: rgba(200, 200, 200, 0.5);
     }
+    #top-section-section1-subsection4 {
+        flex-grow: 1;
+        min-width: 200px;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
 }
 @media screen and (max-width: 419px) {
     #top-section-microphone-search-2 {
@@ -217,6 +234,7 @@ body {
     }
     #top-section-section1-subsection4 {
         flex-grow: 1;
+        min-width: unset;
         height: 100%;
         display: flex;
         justify-content: space-evenly;
@@ -226,7 +244,6 @@ body {
 @media screen and (min-width: 420px) {
     #top-section-section1-subsection4 {
         width: 25%;
-        min-width: 200px;
         height: 100%;
         display: flex;
         justify-content: space-evenly;
@@ -242,7 +259,7 @@ body {
         align-items: center;
     }
 }
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 349px) {
     #top-section-section1-subsection2 {
         display: none;
     }
