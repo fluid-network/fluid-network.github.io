@@ -14,8 +14,8 @@ body {
     position: fixed;
     top: 0;
     transform: translateY(10px);
+    transition: 0.1s;
 }
-
 .item {
     background-color: lightgrey;
     width: fit-content;
@@ -108,6 +108,7 @@ body {
     #top-section-search-area {
         background-color: white;
         width: 80%;
+        min-width: 250px;
         height: 65%;
         border-radius: 100vh;
         border: 1px solid lightgrey;
@@ -115,7 +116,6 @@ body {
         flex-flow: row;
         align-items: center;
         overflow: hidden;
-        position: relative;
     }
     #top-section-search-bar-shell {
         flex-grow: 1;
@@ -264,10 +264,6 @@ body {
         display: none;
     }
 }
-
-
-
-
 #top-section-section2 {
     width: 100%;
     flex-grow: 1;
@@ -282,4 +278,49 @@ body {
 }
 #top-section-section2::-webkit-scrollbar {
     display: none;
+}
+
+#top-section-menu {
+    background-color: lightgrey;
+    min-width: 250px;
+    width: 90vw;
+    max-width: 500px;
+    height: 100vh;
+    position: fixed;
+    transform: translateX(0px);
+    z-index: 2;
+}
+#top-section-menu-slide-bar {
+    background-color: rgba(0, 0, 0, 0);
+    width: 20px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    transform: translateX(50%);
+    transition: 0.3s;
+}
+#top-section-menu-slide-bar:hover, #top-section-menu-slide-bar:active {
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: col-resize;
+}
+#top-section-menu-exit-button {
+    background-color: rgba(255, 255, 255, 0);
+    width: 10%;
+    aspect-ratio: 1;
+    max-width: 40px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border-radius: 50%;
+    border: none;
+    transition: 0.3s;
+    font-size: 125%;
+    text-align: center;
+}
+#top-section-menu-exit-button:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+#top-section-menu-exit-button:active {
+    background-color: rgba(255, 255, 255, 0.5);
 }
