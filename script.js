@@ -91,9 +91,18 @@ document.addEventListener('scroll', (event) => {
     mouse.scroll.x = window.scrollX;
     mouse.scroll.y = window.scrollY;
 
+    
+
     topsection.translateY -= mouse.scroll.deltaY;
     topsection.translateY = Math.min(Math.max(topsection.translateY, -topsection.element.clientHeight), 0);
     document.getElementById('top-section').style.transform = `translateY(${topsection.translateY}px)`;
+    
+    if(mouse.scroll.y <= window.innerHeight) {
+        topsection.element.style.display = "absolute";
+        topsection.element.style.transform = 'translateY(0px)';
+    } else {
+        topsection.element.style.display = "fixed";
+    }
 });
 
 // top-section-menu movement
